@@ -9,6 +9,8 @@ jobs:
     name: Test Action
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
       - name: Generate Ethereum Address
         uses: ./
         id: ethgen
