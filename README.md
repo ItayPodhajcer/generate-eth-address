@@ -16,7 +16,7 @@ The generated Ethereum address.
 # Usage
 ```yaml
 - name: Generate Ethereum Address
-  uses: actions/generate-eth-address@v0
+  uses: cladular/generate-eth-address@v0
   id: ethgen # Later used for reading the output
   with:
     data: '...PUBLIC-KEY...'
