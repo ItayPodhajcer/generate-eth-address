@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+      - name: Install Dependencies
+        run: npm install
       - name: Generate Ethereum Address
         uses: ./
         id: ethgen
