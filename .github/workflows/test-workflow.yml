@@ -21,4 +21,4 @@ jobs:
         with:
           data: '...PUBLIC-KEY...'
       - name: Print Gernerated Address
-        run: 'echo \"Ethereum address: ${{ steps.ethgen.outputs.address }}"'
+        run: 'echo "Ethereum address: ${{ steps.ethgen.outputs.address }}"'
