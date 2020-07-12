@@ -16,13 +16,13 @@ The generated Ethereum address.
 # Usage
 ```yaml
 - name: Generate Ethereum Address
-  uses: actions/hello-world-javascript-action@v1
+  uses: actions/generate-eth-address@v0
   id: ethgen # Later used for reading the output
   with:
     data: '...PUBLIC-KEY...'
 # Use the output from the `ethgen` step
 - name: Print Gernerated Address
-  run: 'echo \"Ethereum address: ${{ steps.ethgen.outputs.address }}"'
+  run: 'echo "Ethereum address: ${{ steps.ethgen.outputs.address }}"'
 ```
 
 # License
