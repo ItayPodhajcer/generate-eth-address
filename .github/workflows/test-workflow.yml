@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate Ethereum Address
-        uses: actions/generate-eth-address@v0
+        uses: ./
         id: ethgen
         with:
           data: '...PUBLIC-KEY...'
