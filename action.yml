@@ -1,0 +1,12 @@
+name: 'Generate Ethereum Address'
+description: 'Generates an Ethereum address using a given source data value'
+inputs:
+  data:  # Source data
+    description: 'Source data used to generate the address (usually a public key)'
+    required: true
+outputs:
+  address: # Ethereum address
+    description: 'Generated Ethereum address'
+runs:
+  using: 'node12'
+  main: 'index.js'
